@@ -46,12 +46,12 @@ public class BinarySearch {
 				flag=1;
 			}
 			if(search<arr[mid])
-				last=mid;
+				last=mid-1;
 			else
-				first=mid;
+				first=mid+1;
 		}
-			
-			
+		if(flag==0)
+			System.out.print("\nElement not present in the array!");			
 
 	}
 
